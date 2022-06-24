@@ -1,0 +1,48 @@
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: red;
+    transition: width 1s, height 1s, border-radius 1s, border-top-left-radius 0.5s, margin 1s, background 1s;
+    
+}
+
+.button-navbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 3rem;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    
+}
+
+.navbar-active{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border-radius: 0;
+    background-image: url(./NuevaCarpeta/20170123_130952.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.button-navbar-active{
+    top: 8px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    background-color: red;
+}
