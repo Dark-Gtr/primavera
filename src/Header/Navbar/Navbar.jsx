@@ -1,6 +1,6 @@
 import React from "react";
 import './Navbar.css';
-import {IoMenu, IoHome, IoImage, IoBookmark} from 'react-icons/io5';
+import {IoMenu, IoHome, IoImage, IoBookmark, IoRestaurant} from 'react-icons/io5';
 
 
 const openMenu = () => {
@@ -38,7 +38,7 @@ const Navbar = () =>{
                     <li><IoHome/> <span>Inicio</span> </li>
                     <li><IoImage/> <span>Galeria</span></li>
                     <li><IoBookmark/> <span>Reservas</span></li>
-                    <li><IoMenu/> <span>Menú</span></li>
+                    <li><IoRestaurant/> <span>Menú</span></li>
                 </ul>
             </div>
             
