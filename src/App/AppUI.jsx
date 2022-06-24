@@ -1,5 +1,6 @@
 import React from "react";
 import { Header } from "../Header/Header";
+import { Main } from "../Main/Main";
 
 const AppUI = () => {
     return (
@@ -7,8 +8,9 @@ const AppUI = () => {
             <Header></Header>
 
             <main>
-                esta es la seccion principal
+                <Main/>
             </main>
+            
 
             <footer>
                 este es el footer
