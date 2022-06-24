@@ -32,7 +32,7 @@ nav{
     height: 100vh;
     margin: 0;
     border-radius: 0;
-    background-image: url(./NuevaCarpeta/20170123_130952.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -45,4 +45,37 @@ nav{
     height: 32px;
     padding: 4px;
     background-color: red;
+}
+
+.menu__main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    transition: width 1s, height 1s;
+    background-color: rgba(0, 0, 0, 0.37);
+    border: 1px white solid;
+    border-radius: 20px;
+    color: white;
+    font-size: 3rem;
+    
+}
+
+.menu-active{
+    visibility: visible;
+    width: 250px;
+    height: 250px;
+}
+
+.menu-container li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-container li span{
+    margin-left: 8px;
 }
