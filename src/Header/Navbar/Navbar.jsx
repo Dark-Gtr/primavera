@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 import './Navbar.css';
 import {IoMenu, IoHome, IoImage, IoBookmark, IoRestaurant} from 'react-icons/io5';
 
@@ -35,10 +36,16 @@ const Navbar = () =>{
             </button>
             <div className="menu__main-container">
                 <ul className="menu-container">
-                    <li><IoHome/> <span>Inicio</span> </li>
-                    <li><IoImage/> <span>Galeria</span></li>
-                    <li><IoBookmark/> <span>Reservas</span></li>
-                    <li><IoRestaurant/> <span>Menú</span></li>
+                    <li>
+                        <NavLink to='/' className={({isActive}) => isActive ? 'current-section' : ''} ><IoHome/> Inicio</NavLink> 
+                    </li>
+                    <li>
+                        <NavLink to='gallery' className={({isActive}) => isActive ? 'current-section' : ''} ><IoImage/> Galeria</NavLink></li>
+                    <li>
+                        <NavLink to='reservation' className={({isActive}) => isActive ? 'current-section' : ''} ><IoBookmark/> Reservas</NavLink></li>
+                    <li>
+                        <NavLink to='menu' className={({isActive}) => isActive ? 'current-section' : ''} ><IoRestaurant/> Menu</NavLink> 
+                    </li>
                 </ul>
             </div>
             

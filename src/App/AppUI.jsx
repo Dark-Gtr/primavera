@@ -5,6 +5,7 @@ import { Main } from "../Main/Main";
 const AppUI = () => {
     return (
         <>
+            
             <Header></Header>
 
             <main>

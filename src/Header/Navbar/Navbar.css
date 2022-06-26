@@ -1,6 +1,8 @@
 nav{
     position: fixed;
     display: flex;
+    top: 0;
+    left: 0;
     align-items: center;
     justify-content: center;
     margin: 8px;
@@ -77,6 +79,15 @@ nav{
     list-style: none;
 }
 
-.menu-container li span{
+.menu-container li a{
     margin-left: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-container li a.current-section{
+    padding: 8px;
+    background-color: white;
+    color: red;
+    border-radius: 8px;
 }
