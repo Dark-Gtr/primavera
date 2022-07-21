@@ -73,6 +73,10 @@ nav{
     height: 250px;
 }
 
+.menu-container{
+    width: 100%;
+}
+
 .menu-container li{
     display: flex;
     align-items: center;
@@ -90,4 +94,10 @@ nav{
     background-color: white;
     color: red;
     border-radius: 8px;
+}
+
+@media (max-width:1024){
+    .navbar-active{
+        width: 20vw;
+    }
 }
